@@ -1,0 +1,128 @@
+EESchema Schematic File Version 4
+LIBS:ESP12-breakout-cache
+EELAYER 29 0
+EELAYER END
+$Descr User 8500 5500
+encoding utf-8
+Sheet 5 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 5CF95F54
+P 3200 1850
+F 0 "J4" H 3228 1876 50  0000 L CNN
+F 1 "ONE_WIRE" H 3228 1785 50  0000 L CNN
+F 2 "" H 3200 1850 50  0001 C CNN
+F 3 "~" H 3200 1850 50  0001 C CNN
+	1    3200 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 5CF962C9
+P 2600 1550
+F 0 "#PWR0119" H 2600 1300 50  0001 C CNN
+F 1 "GND" H 2605 1377 50  0000 C CNN
+F 2 "" H 2600 1550 50  0001 C CNN
+F 3 "" H 2600 1550 50  0001 C CNN
+	1    2600 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0120
+U 1 1 5CF96695
+P 2600 2450
+F 0 "#PWR0120" H 2600 2300 50  0001 C CNN
+F 1 "+3V3" H 2615 2623 50  0000 C CNN
+F 2 "" H 2600 2450 50  0001 C CNN
+F 3 "" H 2600 2450 50  0001 C CNN
+	1    2600 2450
+	-1   0    0    1   
+$EndComp
+$Comp
+L taobao-r:R472,0603 R6
+U 1 1 5CF96C53
+P 2350 2100
+F 0 "R6" H 2291 2054 50  0000 R CNN
+F 1 "R472,0603" H 2291 2145 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2350 2100 50  0001 C CNN
+F 3 "~" H 2350 2100 50  0001 C CNN
+	1    2350 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3000 1950 2600 1950
+Wire Wire Line
+	2600 1950 2600 2250
+Wire Wire Line
+	2600 2250 2350 2250
+Wire Wire Line
+	2350 2250 2350 2200
+Connection ~ 2600 2250
+Wire Wire Line
+	2600 2250 2600 2450
+Wire Wire Line
+	2350 2000 2350 1850
+Wire Wire Line
+	2350 1850 3000 1850
+Wire Wire Line
+	3000 1750 2600 1750
+Wire Wire Line
+	2600 1750 2600 1550
+Text Label 1750 1850 0    50   ~ 0
+DATA
+Wire Wire Line
+	1750 1850 2350 1850
+Connection ~ 2350 1850
+Text Label 1450 900  2    50   ~ 0
+DATA
+Text HLabel 900  900  0    50   Input ~ 0
+DATA
+Wire Wire Line
+	900  900  1450 900 
+$Comp
+L power:+3V3 #PWR0121
+U 1 1 5CF993E4
+P 2200 1200
+F 0 "#PWR0121" H 2200 1050 50  0001 C CNN
+F 1 "+3V3" V 2215 1328 50  0000 L CNN
+F 2 "" H 2200 1200 50  0001 C CNN
+F 3 "" H 2200 1200 50  0001 C CNN
+	1    2200 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5CF9965F
+P 2650 1200
+F 0 "#PWR0122" H 2650 950 50  0001 C CNN
+F 1 "GND" V 2655 1072 50  0000 R CNN
+F 2 "" H 2650 1200 50  0001 C CNN
+F 3 "" H 2650 1200 50  0001 C CNN
+	1    2650 1200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L taobao-c:C106,0603 C4
+U 1 1 5CF99D01
+P 2400 1200
+F 0 "C4" V 2171 1200 50  0000 C CNN
+F 1 "C106,0603" V 2262 1200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2400 1200 50  0001 C CNN
+F 3 "~" H 2400 1200 50  0001 C CNN
+	1    2400 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 1200 2300 1200
+Wire Wire Line
+	2500 1200 2650 1200
+$EndSCHEMATC

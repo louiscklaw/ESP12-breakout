@@ -1,0 +1,121 @@
+EESchema Schematic File Version 4
+LIBS:ESP12-breakout-cache
+EELAYER 29 0
+EELAYER END
+$Descr User 8500 5500
+encoding utf-8
+Sheet 1 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 650  4050 950  750 
+U 5CF6369E
+F0 "power" 50
+F1 "power.sch" 50
+$EndSheet
+$Sheet
+S 2050 1100 900  350 
+U 5CF636DD
+F0 "i2c" 50
+F1 "i2c.sch" 50
+F2 "SCL" I R 2950 1250 50 
+F3 "SDA" I R 2950 1350 50 
+$EndSheet
+$Sheet
+S 2050 2600 900  550 
+U 5CF636FB
+F0 "analog" 50
+F1 "analog.sch" 50
+F2 "ADC" I R 2950 2850 50 
+$EndSheet
+$Sheet
+S 5850 2050 950  750 
+U 5CF63725
+F0 "one-wire" 50
+F1 "one-wire.sch" 50
+F2 "DATA" I L 5850 2150 50 
+$EndSheet
+$Sheet
+S -2250 750  900  500 
+U 5CF63748
+F0 "uart" 50
+F1 "uart.sch" 50
+$EndSheet
+$Sheet
+S 3550 850  1650 2500
+U 5CF637E0
+F0 "ESP-12E" 50
+F1 "ESP-12E.sch" 50
+F2 "TXD" I L 3550 1000 50 
+F3 "RXD" I L 3550 1100 50 
+F4 "SCL" I L 3550 1250 50 
+F5 "SDA" I L 3550 1350 50 
+F6 "DATA" I R 5200 2150 50 
+F7 "CS" I L 3550 2050 50 
+F8 "MISO" B L 3550 1850 50 
+F9 "MOSI" B L 3550 1950 50 
+F10 "SCK" I L 3550 1750 50 
+F11 "ADC" I L 3550 2850 50 
+F12 "IO1" I R 5200 1050 50 
+F13 "IO2" I R 5200 1150 50 
+F14 "IO3" I R 5200 1250 50 
+F15 "IO4" I R 5200 1350 50 
+F16 "IO5" I R 5200 1450 50 
+$EndSheet
+$Sheet
+S 2050 1650 900  700 
+U 5CFFB28B
+F0 "SDCARD" 50
+F1 "SDCARD.sch" 50
+F2 "CLK" I R 2950 1750 50 
+F3 "DO" B R 2950 1850 50 
+F4 "DI" B R 2950 1950 50 
+F5 "CS" I R 2950 2050 50 
+$EndSheet
+Wire Wire Line
+	2950 1750 3550 1750
+Wire Wire Line
+	2950 1850 3550 1850
+Wire Wire Line
+	2950 1950 3550 1950
+Wire Wire Line
+	2950 2050 3550 2050
+Text Notes -2100 1050 0    50   ~ 0
+TODO: DELETE\n
+Wire Wire Line
+	5200 2150 5850 2150
+Wire Wire Line
+	2950 1250 3550 1250
+Wire Wire Line
+	2950 1350 3550 1350
+Wire Wire Line
+	2950 2850 3550 2850
+Wire Wire Line
+	5200 1050 5850 1050
+Wire Wire Line
+	5200 1150 5850 1150
+$Sheet
+S 5850 850  950  750 
+U 5CF6375B
+F0 "gpio" 50
+F1 "gpio.sch" 50
+F2 "IO1" I L 5850 1050 50 
+F3 "IO2" I L 5850 1150 50 
+F4 "IO3" I L 5850 1250 50 
+F5 "IO4" I L 5850 1350 50 
+F6 "IO5" I L 5850 1450 50 
+$EndSheet
+Wire Wire Line
+	5200 1250 5850 1250
+Wire Wire Line
+	5200 1350 5850 1350
+Wire Wire Line
+	5200 1450 5850 1450
+$EndSCHEMATC

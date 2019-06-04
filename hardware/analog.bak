@@ -1,0 +1,110 @@
+EESchema Schematic File Version 4
+LIBS:ESP12-breakout-cache
+EELAYER 29 0
+EELAYER END
+$Descr User 8500 5500
+encoding utf-8
+Sheet 4 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x03_Female J3
+U 1 1 5CF93A33
+P 2500 2300
+F 0 "J3" H 2392 2585 50  0000 C CNN
+F 1 "ADC" H 2392 2494 50  0000 C CNN
+F 2 "" H 2500 2300 50  0001 C CNN
+F 3 "~" H 2500 2300 50  0001 C CNN
+	1    2500 2300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 5CF93EF7
+P 3000 2000
+F 0 "#PWR0116" H 3000 1750 50  0001 C CNN
+F 1 "GND" H 3005 1827 50  0000 C CNN
+F 2 "" H 3000 2000 50  0001 C CNN
+F 3 "" H 3000 2000 50  0001 C CNN
+	1    3000 2000
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 5CF94172
+P 3000 2650
+F 0 "#PWR0117" H 3000 2500 50  0001 C CNN
+F 1 "+3V3" H 3015 2823 50  0000 C CNN
+F 2 "" H 3000 2650 50  0001 C CNN
+F 3 "" H 3000 2650 50  0001 C CNN
+	1    3000 2650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	2700 2400 3000 2400
+Wire Wire Line
+	3000 2400 3000 2650
+Wire Wire Line
+	2700 2200 3000 2200
+Wire Wire Line
+	3000 2200 3000 2000
+$Comp
+L taobao-r:R102,0603 R4
+U 1 1 5CF94A1D
+P 3250 2300
+F 0 "R4" V 3054 2300 50  0000 C CNN
+F 1 "R102,0603" V 3145 2300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3250 2300 50  0001 C CNN
+F 3 "~" H 3250 2300 50  0001 C CNN
+	1    3250 2300
+	0    1    1    0   
+$EndComp
+$Comp
+L taobao-r:R0,0603 R5
+U 1 1 5CF94DBE
+P 3650 2500
+F 0 "R5" H 3709 2546 50  0000 L CNN
+F 1 "TBA,0603" H 3709 2455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3650 2500 50  0001 C CNN
+F 3 "~" H 3650 2500 50  0001 C CNN
+	1    3650 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 2300 3150 2300
+Text Label 4200 2300 2    50   ~ 0
+ADC
+Wire Wire Line
+	3350 2300 3650 2300
+Wire Wire Line
+	3650 2400 3650 2300
+Connection ~ 3650 2300
+Wire Wire Line
+	3650 2300 4200 2300
+$Comp
+L power:GND #PWR0118
+U 1 1 5CF954CA
+P 3650 2700
+F 0 "#PWR0118" H 3650 2450 50  0001 C CNN
+F 1 "GND" H 3655 2527 50  0000 C CNN
+F 2 "" H 3650 2700 50  0001 C CNN
+F 3 "" H 3650 2700 50  0001 C CNN
+	1    3650 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2700 3650 2600
+Text Label 1350 900  2    50   ~ 0
+ADC
+Text HLabel 850  900  0    50   Input ~ 0
+ADC
+Wire Wire Line
+	850  900  1350 900 
+$EndSCHEMATC

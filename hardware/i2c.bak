@@ -1,0 +1,115 @@
+EESchema Schematic File Version 4
+LIBS:ESP12-breakout-cache
+EELAYER 29 0
+EELAYER END
+$Descr User 8500 5500
+encoding utf-8
+Sheet 3 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x04_Female J2
+U 1 1 5CF8F902
+P 2500 2450
+F 0 "J2" H 2392 2735 50  0000 C CNN
+F 1 "I2C" H 2392 2644 50  0000 C CNN
+F 2 "" H 2500 2450 50  0001 C CNN
+F 3 "~" H 2500 2450 50  0001 C CNN
+	1    2500 2450
+	-1   0    0    -1  
+$EndComp
+Text Label 3100 2450 2    50   ~ 0
+SCL
+$Comp
+L power:GND #PWR0113
+U 1 1 5CF906FC
+P 3100 2250
+F 0 "#PWR0113" H 3100 2000 50  0001 C CNN
+F 1 "GND" H 3105 2077 50  0000 C CNN
+F 2 "" H 3100 2250 50  0001 C CNN
+F 3 "" H 3100 2250 50  0001 C CNN
+	1    3100 2250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 2250 3100 2350
+Wire Wire Line
+	3100 2350 2700 2350
+Text Label 3100 2550 2    50   ~ 0
+SDA
+Wire Wire Line
+	2700 2450 3400 2450
+Wire Wire Line
+	2700 2550 3500 2550
+Text HLabel 1050 1000 0    50   Input ~ 0
+SCL
+Text HLabel 1050 1100 0    50   Input ~ 0
+SDA
+Text Label 1500 1000 2    50   ~ 0
+SCL
+Text Label 1500 1100 2    50   ~ 0
+SDA
+Wire Wire Line
+	1050 1000 1500 1000
+Wire Wire Line
+	1050 1100 1500 1100
+$Comp
+L power:+3V3 #PWR0114
+U 1 1 5CF91D29
+P 3450 1650
+F 0 "#PWR0114" H 3450 1500 50  0001 C CNN
+F 1 "+3V3" H 3465 1823 50  0000 C CNN
+F 2 "" H 3450 1650 50  0001 C CNN
+F 3 "" H 3450 1650 50  0001 C CNN
+	1    3450 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-rpack:RN_472,0603 RN1
+U 1 1 5CF92222
+P 3600 2000
+F 0 "RN1" H 3788 2046 50  0000 L CNN
+F 1 "RN_472,0603" H 3788 1955 50  0000 L CNN
+F 2 "Resistor_SMD:R_Array_Concave_4x0603" V 3875 2000 50  0001 C CNN
+F 3 "~" H 3600 2000 50  0001 C CNN
+	1    3600 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 1650 3450 1700
+Wire Wire Line
+	3450 1700 3400 1700
+Wire Wire Line
+	3400 1700 3400 1800
+Wire Wire Line
+	3500 1800 3500 1700
+Wire Wire Line
+	3500 1700 3450 1700
+Connection ~ 3450 1700
+Wire Wire Line
+	3400 2200 3400 2450
+Wire Wire Line
+	3500 2200 3500 2550
+$Comp
+L power:+5V #PWR0115
+U 1 1 5CFA5633
+P 3100 2800
+F 0 "#PWR0115" H 3100 2650 50  0001 C CNN
+F 1 "+5V" H 3115 2973 50  0000 C CNN
+F 2 "" H 3100 2800 50  0001 C CNN
+F 3 "" H 3100 2800 50  0001 C CNN
+	1    3100 2800
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 2650 3100 2650
+Wire Wire Line
+	3100 2650 3100 2800
+$EndSCHEMATC
