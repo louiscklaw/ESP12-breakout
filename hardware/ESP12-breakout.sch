@@ -134,4 +134,48 @@ Wire Wire Line
 Connection ~ 3100 1350
 Wire Wire Line
 	3100 1350 3550 1350
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H1
+U 1 1 5CFC54DC
+P 3050 4100
+F 0 "H1" H 3150 4146 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 3150 4055 50  0000 L CNN
+F 2 "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like" H 3050 4100 50  0001 C CNN
+F 3 "~" H 3050 4100 50  0001 C CNN
+	1    3050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H2
+U 1 1 5CFC5740
+P 3050 4300
+F 0 "H2" H 3150 4346 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 3150 4255 50  0000 L CNN
+F 2 "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like" H 3050 4300 50  0001 C CNN
+F 3 "~" H 3050 4300 50  0001 C CNN
+	1    3050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H3
+U 1 1 5CFC5AD5
+P 3050 4500
+F 0 "H3" H 3150 4546 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 3150 4455 50  0000 L CNN
+F 2 "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like" H 3050 4500 50  0001 C CNN
+F 3 "~" H 3050 4500 50  0001 C CNN
+	1    3050 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L taobao-mounting-hole:MOUNT_M2.5 H4
+U 1 1 5CFC5ADF
+P 3050 4700
+F 0 "H4" H 3150 4746 50  0000 L CNN
+F 1 "MOUNT_M2.5" H 3150 4655 50  0000 L CNN
+F 2 "footprint-lib:MountingHole_2.7mm_M2.5,rpi_like" H 3050 4700 50  0001 C CNN
+F 3 "~" H 3050 4700 50  0001 C CNN
+	1    3050 4700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

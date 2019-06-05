@@ -1,4 +1,28 @@
-Cmp-Mod V01 Created by PcbNew   date = Wednesday, June 05, 2019 PM03:09:33 HKT
+Cmp-Mod V01 Created by PcbNew   date = Wednesday, June 05, 2019 PM04:59:40 HKT
+
+BeginCmp
+TimeStamp = 5CF84F47
+Path = /5CFAB75A/5CFC1B29
+Reference = U5;
+ValeurCmp = 24C02_SOIC8;
+IdModule  = footprint-lib:24Cxx_SOIC8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CF84D93
+Path = /5CFAB75A/5CFAF73C
+Reference = RN2;
+ValeurCmp = RN_472,0603;
+IdModule  = Resistor_SMD:R_Array_Concave_4x0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 5CF848FC
+Path = /5CFAB75A/5CFAC802
+Reference = C8;
+ValeurCmp = C106,0805;
+IdModule  = Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder;
+EndCmp
 
 BeginCmp
 TimeStamp = 5CF7F52F
