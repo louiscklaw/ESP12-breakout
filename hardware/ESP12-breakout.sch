@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -84,9 +84,9 @@ Wire Wire Line
 Wire Wire Line
 	5200 2150 5850 2150
 Wire Wire Line
-	2950 1250 3550 1250
+	2950 1250 3200 1250
 Wire Wire Line
-	2950 1350 3550 1350
+	2950 1350 3100 1350
 Wire Wire Line
 	2950 2850 3550 2850
 Wire Wire Line
@@ -110,4 +110,28 @@ Wire Wire Line
 	5200 1350 5850 1350
 Wire Wire Line
 	5200 1450 5850 1450
+Text Notes 3900 4100 0    100  ~ 0
+5 DRC error accepted
+$Sheet
+S 2050 550  900  400 
+U 5CFAB75A
+F0 "24c02" 50
+F1 "24c02.sch" 50
+F2 "SCL" I R 2950 700 50 
+F3 "SDA" I R 2950 800 50 
+$EndSheet
+Wire Wire Line
+	2950 700  3200 700 
+Wire Wire Line
+	3200 700  3200 1250
+Connection ~ 3200 1250
+Wire Wire Line
+	3200 1250 3550 1250
+Wire Wire Line
+	2950 800  3100 800 
+Wire Wire Line
+	3100 800  3100 1350
+Connection ~ 3100 1350
+Wire Wire Line
+	3100 1350 3550 1350
 $EndSCHEMATC
