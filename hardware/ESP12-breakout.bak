@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr User 8500 5500
 encoding utf-8
-Sheet 1 9
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -41,12 +41,6 @@ U 5CF63725
 F0 "one-wire" 50
 F1 "one-wire.sch" 50
 F2 "DATA" I L 5850 2150 50 
-$EndSheet
-$Sheet
-S -2250 750  900  500 
-U 5CF63748
-F0 "uart" 50
-F1 "uart.sch" 50
 $EndSheet
 $Sheet
 S 3550 850  1650 2500
@@ -87,8 +81,6 @@ Wire Wire Line
 	2950 1950 3550 1950
 Wire Wire Line
 	2950 2050 3550 2050
-Text Notes -2100 1050 0    50   ~ 0
-TODO: DELETE\n
 Wire Wire Line
 	5200 2150 5850 2150
 Wire Wire Line
