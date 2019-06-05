@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 10
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -405,16 +405,6 @@ Wire Wire Line
 	2650 1050 3200 1050
 Wire Wire Line
 	2650 1350 3200 1350
-$Sheet
-S 9250 5400 900  700 
-U 5CF690E7
-F0 "CP2102" 50
-F1 "CP2102.sch" 50
-F2 "RESET" I L 9250 5550 50 
-F3 "GPIO0" I L 9250 5650 50 
-F4 "RXD" I L 9250 5850 50 
-F5 "TXD" I L 9250 5950 50 
-$EndSheet
 Text Label 8850 5950 0    50   ~ 0
 TXD
 Text Label 8850 5850 0    50   ~ 0
@@ -423,14 +413,6 @@ Wire Wire Line
 	9250 5950 8850 5950
 Wire Wire Line
 	9250 5850 8850 5850
-Text Label 8850 5650 0    50   ~ 0
-GPIO0
-Wire Wire Line
-	8850 5650 9250 5650
-Text Label 8850 5550 0    50   ~ 0
-RESET
-Wire Wire Line
-	8850 5550 9250 5550
 Text HLabel 2650 1550 0    50   Input ~ 0
 CS
 Text HLabel 2650 1650 0    50   Input ~ 0
@@ -531,4 +513,30 @@ Text HLabel 2650 2500 0    50   Input ~ 0
 IO4
 Text HLabel 2650 2600 0    50   Input ~ 0
 IO5
+$Comp
+L taobao-components:TTL_HEADER J?
+U 1 1 5CF7E930
+P 9250 5950
+F 0 "J?" H 9022 5882 50  0000 R CNN
+F 1 "TTL_HEADER" H 9022 5973 50  0000 R CNN
+F 2 "footprint-lib:TTL_HEADER" H 9250 5550 50  0001 C CNN
+F 3 "" H 9050 5950 50  0001 C CNN
+	1    9250 5950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CF7F9B3
+P 9150 6250
+F 0 "#PWR?" H 9150 6000 50  0001 C CNN
+F 1 "GND" H 9155 6077 50  0000 C CNN
+F 2 "" H 9150 6250 50  0001 C CNN
+F 3 "" H 9150 6250 50  0001 C CNN
+	1    9150 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 6250 9150 6050
+Wire Wire Line
+	9150 6050 9250 6050
 $EndSCHEMATC
